@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Camingo Code Regular';
+    src: url('../public/CamingoCode-Regular.ttf');
+}
+@font-face {
+    font-family: 'Camingo Code Italic';
+    src: url('../public/CamingoCode-Italic.ttf');
+}
+@font-face {
+    font-family: 'Camingo Code BoldItalic';
+    src: url('../public/CamingoCode-BoldItalic.ttf');
+}
+@font-face {
+    font-family: 'Camingo Code Bold';
+    src: url('../public/CamingoCode-Bold.ttf');
+}
+
+*{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background: #333333;
+    font-family: 'Camingo Code Regular';
+    width:100vw;
+    overflow-x: hidden;
+    
+}
+.onNavigation{
+    overflow-y:hidden;
+}
+a {
+    text-decoration: none;
+}
+
+p{
+    margin:0;
+}
+
+
+
+
+
+

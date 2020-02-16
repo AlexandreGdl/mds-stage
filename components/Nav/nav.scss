@@ -1,0 +1,135 @@
+
+/*----------
+----NAV-----
+----------*/
+.block-nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
+
+    .nav-wrapper{
+        width: 90%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+    
+
+        .nav-logo{
+            width: 40px;
+            height:40px;
+
+            @media screen and (min-width: 1024px){
+                width: 75px;
+                height:75px;
+            }
+        }
+
+        .nav-button-menu{
+            height:35px;
+            fill:white;
+            transition:all .2s;
+
+            @media screen and (min-width: 1024px){
+                width: 75px;
+                height:75px;
+            }
+        }
+
+        .nav-button-menu:hover{
+            cursor: pointer;
+            fill:#FFED00
+        }
+    }
+}
+
+.navigation-page{
+    position: fixed;
+    top:0;
+    left:100%;
+    z-index:6;
+    width:100vw;
+    height:100vh;
+    background: rgb(15,11,79);
+    background: linear-gradient(156deg, rgba(15,11,79,1) 0%, rgba(16,16,105,1) 37%, rgba(75,80,82,1) 100%);
+    transition: all .5s;
+
+    .nav-list-link .nav-link:hover a{
+        color:#FFED00
+    }
+
+    .social-list {
+        display: flex;
+        flex-flow: row wrap;
+        padding:0;
+        margin-top: 40px;
+    
+
+        li {
+            list-style-type: none;
+
+            a{
+                margin-right: 20px;
+                color:white;
+                width:25px;
+                transition: all  .5s;
+            }
+        }
+    }
+
+    .nav-list-link{
+        padding: 0;
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        height: 40%;
+    
+
+        .nav-link a{
+            color: white;
+            font-family: "Camingo Code Bold";
+            margin-bottom: 25px;
+            transition: all .5s;
+
+            @media screen and (min-width: 1024px){
+                font-size: 36pt;
+            }
+        }
+    }
+
+    .social-list li a:hover{
+        color:#FFED00;
+    }
+
+    .nav-list-link li{
+        list-style-type: none;
+        font-size: 23pt;
+        display:inline;
+    }
+
+    .navigation-page-wrapper{
+        width:80%;
+        height:100%;
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        margin: 0 auto;
+
+        @media screen and (min-width: 1024px ){
+            li a {
+                width:35px;
+                height:35px;
+            }
+        }
+    }
+}
+
+.navigation-page.active{
+    left:0;
+}
+
+/*----------
+----NAV-----
+----------*/
